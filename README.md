@@ -72,3 +72,8 @@ Sistem adopsi hewan peliharaan berbasis Java dengan antarmuka berbasis menu (con
 ```bash
 javac *.java
 java Main
+
+
+## Anggota Tim :
+- Nisa Rianti (2208107010018)
+- Akshania Maisa Rahmah (2208107010017)

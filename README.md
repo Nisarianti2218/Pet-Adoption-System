@@ -59,6 +59,14 @@ Sistem adopsi hewan peliharaan berbasis Java dengan antarmuka berbasis menu (con
 ### User
 - Lihat Hewan Tersedia
 - Ajukan Permintaan Adopsi
+  
+![WhatsApp Image 2025-04-09 at 14 39 34_a8656be8](https://github.com/user-attachments/assets/d8d9e149-16c2-4964-be5f-257e55a12a70)
+
+### Component Diagram
+![WhatsApp Image 2025-04-09 at 16 14 34_32e67a86](https://github.com/user-attachments/assets/e24a6264-3733-430e-90bf-3282c4996b0e)
+
+### Class Diagram
+![tes drawio 1](https://github.com/user-attachments/assets/7cf20ade-00e3-45b2-9eef-993919a3178f)
 
 ---
 

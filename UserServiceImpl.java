@@ -1,25 +1,9 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.UUID;
 
-public class UserServiceImpl implements UserService {
-    private List<User> users = new ArrayList<>();
-    private int userCounter = 1;
-
-    @Override
-    public User getUserById(int id) {
-        for (User user : users) {
-            if (user.getId().equals("U" + id)) {
-                return user;
-            }
-        }
-        return null;
-    }
-
+public class UserServiceImpl implements IUserMgt {
     @Override
     public User createUser(String name, String phone) {
-        String userId = "U" + userCounter++;
-        User newUser = new User(userId, name, phone);
-        users.add(newUser);
-        return newUser;
+        String id = UUID.randomUUID().toString(); // generate ID unik
+        return new User(id, name, phone); // panggil konstruktor 3 argumen
     }
 }

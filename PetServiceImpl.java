@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class PetServiceImpl implements PetService {
+public class PetServiceImpl implements IPetMgt {
     private List<Pet> pets = new ArrayList<>();
-    private int petIdCounter = 1;
+    private int nextId = 1;
 
     @Override
     public void addPet(Pet pet) {
         pets.add(pet);
-        petIdCounter++;
+        nextId++;
     }
 
     @Override
@@ -18,16 +18,11 @@ public class PetServiceImpl implements PetService {
 
     @Override
     public Pet getPetById(int id) {
-        for (Pet pet : pets) {
-            if (pet.getId() == id) {
-                return pet;
-            }
-        }
-        return null;
+        return pets.stream().filter(p -> p.getId() == id).findFirst().orElse(null);
     }
 
     @Override
     public int getNextPetId() {
-        return petIdCounter;
+        return nextId;
     }
 }
